@@ -1,0 +1,356 @@
+/* General Rulesets */
+* {
+    color: #ffffff;
+  }
+  
+  body {
+    font-family: Helvetica, sans-serif;
+    background: url("https://content.codecademy.com/courses/learn-handlebars/musicon/musicon_bg.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  footer {
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    position: static;
+  }
+  
+  header {
+    padding-top: 3%;
+    min-height: 70px;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .branding {
+    float: left;
+  }
+  
+  .branding h1 {
+    font-weight: normal;
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  .navlinks {
+    margin-top: 15%;
+  }
+  
+  .navlinks li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  
+  .navlinks li a {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: normal;
+  }
+  
+  .navlinks li a:hover, .navlinks .current a {
+    color: #ffffff;
+  }
+  
+  /* Home Page Rulesets */
+  
+  #introduction {
+    text-align: center;
+    margin: 15% 0 50% 0;
+  }
+  
+  #introduction h1 {
+    font-size: 60px;
+  }
+  
+  #introduction p {
+    margin: 10% auto;
+    font-size: 18px;
+    font-weight: lighter;
+  }
+  
+  #introduction a {
+    display: block;
+    width: 20%;
+    padding: 3% 8%;
+    margin: 0 auto;
+    color: #ffffff;
+    background-color: #4c7ef3;
+    border-radius: 4px;
+  }
+  
+  #introduction a:hover {
+    background-color: #26A69A;
+  }
+  
+  /* Store Page Rulesets */
+  
+  #showcase {
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+  
+  .instrument {
+    width: 90%;
+    overflow: auto;
+    background-color: #ffffff;
+    opacity: .9;
+    padding: 2% 5%;
+    margin: 5% auto;
+    border-radius: 5px;                                                                                        
+  }
+  
+  .image {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32%;
+    min-width: 100px;
+    margin: 0 auto;
+  }
+  
+  .details {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    margin: -1% auto;
+    padding: 2%;
+  }
+  
+  .name, .description, .price, del {
+    color: #000000;
+    text-align: left;
+  }
+  
+  .description, .price {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  
+  .description {
+    height: 100%;
+    font-size: 13px;
+    overflow: auto;
+  }
+  
+  .price {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .sale {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fa4359;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Contact Page Rulesets */
+  
+  #connection {
+    width: 100%;
+    margin: 15% auto;
+    text-align: center;
+  }
+  
+  #top {
+    margin: 15% auto;
+  }
+  
+  #top h2 {
+    margin: 3%;
+    font-size: 30px;
+    font-weight: normal;
+  }
+  
+  #top p {
+    margin: 3%;
+    font-size: 18px;
+    font-weight: lighter;
+  }
+  
+  .contact {
+    width: 100%;
+    margin: 10% auto;
+  }
+  
+  .contact p, .contact ul {
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  .contact img {
+    margin-bottom: 1%;
+  }
+  
+  #location {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .attribution {
+    text-decoration: underline;
+  }
+
+  /*start hamburger menu*/
+
+  .hamburger {
+    display: none;
+  }
+
+  .bar {
+    display: none; /*block*/
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all .3s ease;
+    background-color: #ffffff;
+  }
+
+  /*end hamburger menu*/
+
+
+  @media only screen and (max-width: 375px) {
+
+    #introduction h1 {
+        font-size: 55px;
+    }
+
+    #introduction a {
+        width: 25%;
+    }
+
+    /*store items*/
+    .container h2 {
+        font-size: 20px;
+        margin-bottom: 2%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    #introduction a {
+        width: 25%;
+    }
+
+    .container h2 {
+        font-size: 20px;
+        margin-bottom: 2%;
+    }
+
+    /* start hamburger menu */
+
+    .hamburger {
+        display: block;
+        position: relative;
+        z-index: 4;
+    }
+
+    .navlinks li a, .navlinks li.current a {
+        display: block;
+        margin: 20px auto;
+        color: #ffffff;
+        text-align: center;
+        font-size: 26px;
+        font-weight: bolder;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        background-color: #fff;
+    }
+
+    .navlinks { /* hides the hamburger menu on desktop */
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20%;
+        right: -100%; 
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .navlinks.active { 
+        right: 0;
+        position: fixed;
+        top: 0;
+        max-width: 55%;
+        height: 100%;
+        background-color: #c1767c;
+        opacity: 90%;
+        z-index: 3;
+        overflow-y: hidden;
+        transition: none;
+    }
+
+    .lock-scroll {
+        overflow: hidden;
+    }
+
+    /*start animation which turns bar into an X*/
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color: #fff;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: #fff;
+    }
+
+    /*end animation which turns bar into an X*/
+
+  }
+
+  @media only screen and (max-width: 320px) {
+
+    #introduction h1 {
+        font-size: 45px;
+    }
+
+    #introduction a {
+        width: 30%;
+    }
+
+    /*store items*/
+    .container h2 {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .details {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .instrument {
+        overflow: hidden; /*without this there is a horizontal scrollbar in the element*/
+    }
+
+    .navlinks li a, .navlinks li.current a {
+        font-size: 24px;
+    }
+
+  }
+  

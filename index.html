@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.js"></script>
+
+    <script id="templateHB" type="text/x-handlebars-template">
+        <h1>{{title}}</h1>
+        <p>{{body}}</p>
+        <a href="store.html">Shop Now</a>
+    </script>
+
+    <title>Musicon</title>
+</head>
+<body>
+    <header>
+        <section class="container">
+          <h1 class="branding">Musicon</h1>
+  
+          <nav class="navbar">
+            <ul class="navlinks">
+                <li class="current"><a class="navlink" href="index.html">Home</a></li>
+                <li><a class="navlink" href="store.html">Store</a></li>
+                <li><a class="navlink" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger"> <!--3 lines for hamburger menu-->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+          </nav>
+  
+        </section>
+      </header>
+
+      <article id="introduction">
+        <section class="container" id="information">
+        </section>
+      </article> 
+  
+      <footer>
+        <p>&copy; Musicon</p>
+        <p>Design by <a class="attribution" href="https://www.codecademy.com/learn">CodeCademy</a></p>
+      </footer>
+      
+      <script src="main.js"></script>
+      <script src="hamburger.js"></script>
+</body>
+</html>

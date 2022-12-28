@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.js"></script>
+
+    <script id="templateHB" type="text/x-handlebars-template">
+        {{#each instruments}}
+        <article class="instrument">
+            <img class="image" src="{{this.image}}" alt="{{this.name}}">
+            <section class="details">
+              <h2 class="name">{{this.name}}</h2>
+              <p class="description">{{this.description}}</p>
+              {{#if sale}} 
+              <p class="price"><del>{{this.price}}</del></p> <!-- del strikes through the price-->
+              <p class="sale">{{this.sale}}</p>
+              {{else}}
+              <p class="price">{{this.price}}</p>
+              {{/if}}
+            </section>
+        </article>
+        {{/each}}
+    </script>
+
+    <title>Musicon</title>
+</head>
+<body>
+    <header>
+        <section class="container">
+          <h1 class="branding">Musicon</h1>
+  
+          <nav>
+            <ul class="navlinks">
+                <li class="current"><a class="navlink" href="index.html">Home</a></li>
+                <li><a class="navlink" href="store.html">Store</a></li>
+                <li><a class="navlink" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger"> <!--3 lines for hamburger menu-->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+          </nav>
+        </section>
+      </header>
+  
+      <article id="showcase"> <!--container for store section - instruments and prices etc-->
+        <section class="container" id="information">
+        </section>
+      </article>
+  
+      <footer>
+        <p>&copy; Musicon 2018</p>
+        <p>Design by <a class="attribution" href="https://www.codecademy.com/learn">CodeCademy</a></p>
+      </footer>
+  
+      <script src="main.js"></script>
+      <script src="hamburger.js"></script>
+    
+</body>
+</html>
