@@ -255,6 +255,7 @@
         display: block;
         position: relative;
         z-index: 4;
+        margin-top: 20px;
     }
 
     .navlinks li a, .navlinks li.current a {
