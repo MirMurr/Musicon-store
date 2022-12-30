@@ -1,8 +1,7 @@
 # CodeCademy - Musicon store project with handlebars.js
-
-    Part of the design (layout) and images were provided by CodeCademy. I added media queries to the CSS so that it renders properly on mobile devices as well. I added hamburger menu for navbar on smaller screen sizes.
-
-    I applied handlebars.js and I added media queries to adapt the design for smaller screen sizes. I added a hamburger menu for the navbar on smaller screen sizes. 
+    
+     Part of the design (layout) and images were provided by CodeCademy. I added media queries to the CSS so that it renders properly on mobile devices as           well. I added hamburger menu for navbar on smaller screen sizes.
+    I applied handlebars.js to create reusable HTML templates.
 
 ## Table of contents
 
